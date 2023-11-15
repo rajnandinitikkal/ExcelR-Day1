@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal css js</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .container{
+            color: blueviolet;
+            text-align: center;
+            font-size: 30px;
+        }
+        button{
+            padding:5px 15px;
+            border: none;
+            font-size: 25px;
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 20px;
+            margin-left: 720px;
+            cursor: pointer;
+
+        }
+    </style>
+    <script>
+        function change(){
+           document.getElementById('btn').innerHTML = 'Clicked';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">Hello</div>
+    <button id="btn" onclick="change()">Click</button>
+</body>
+</html>
